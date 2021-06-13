@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0197F6;
+}
+
+#topnav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 1s;
+  background-color: #02182B;
+  overflow: hidden;
+  align-items: center;
+}
+#topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+#topnav img{
+  float: left;
+  padding: 0px 0px;
+  height: 52px;
+  size: 17px;
+}
+#topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#topnav a.activee {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.centered {
+  display: block;
+  margin: auto;
+  text-align: center;
+
+}
+
+.logo {
+  margin-top: 10vw;
+  margin-bottom: 5vw;
+  width: 10vw;
+}
+
+#nr {
+  font-family: 'Staatliches', cursive;
+  color: #ff9900f5;
+  font-size: 50px;
+  margin-bottom: 5vw;
+}
+
+.button {
+  position: relative;
+  /*margin: auto;*/
+  cursor: pointer;
+  text-align: center;
+  padding: 1vw;
+  width: min-content;
+  border-radius: 25px;
+  animation-name: jump;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(
+      35deg,
+      #68C5DB,
+      #91e8fc
+    );
+}
+
+@keyframes jump {
+  0% {
+    left: 40vw;
+  }
+  50% {
+    left: 55vw;
+  }
+  100% {
+    left: 40vw;
+  }
+}
+
+video{
+  align-self: center;
+  position:absolute;
+  padding: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
